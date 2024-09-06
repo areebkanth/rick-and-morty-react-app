@@ -1,0 +1,20 @@
+
+/* CharacterList.css */
+.character-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .character-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .character-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

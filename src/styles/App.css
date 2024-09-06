@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.App {
+  padding: 10px; 
+  font-family: 'Roboto', sans-serif;  /* Updated font */
+  background-color: #f0f0f5;
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/dust_scratches.png'); /* Subtle pattern */
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 10px; /* Adjusted margin */
+  font-weight: 700; /* Enhanced heading style */
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align the controls */
+  align-items: center;
+  margin-bottom: 10px; /* Reduced the space below controls */
+  gap: 10px; /* Adjusted gap between control items */
+}
+
+input[type="text"] {
+  padding: 8px; /* Slightly reduced padding */
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select {
+  padding: 8px; /* Slightly reduced padding */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  gap: 10px; /* Adjusted gap between filter items */
+  align-items: center;
+}
+
+.character-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .character-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column; /* Stacked for smaller screens */
+    gap: 5px; /* Maintain small gap for mobile screens */
+  }
+  
+  .filters {
+    flex-direction: column; /* Filters in column for mobile */
+  }
+
+  .character-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+  }
+}
+
+.character-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.character-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hover effect */
+}
+
+.character-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.character-card h2 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.character-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
