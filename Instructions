@@ -1,0 +1,83 @@
+1. Install Prerequisites:
+
+Before starting, make sure you have the following installed on your machine:
+
+    Node.js (which comes with npm): You can download it from Node.js official website.
+    Git: Download it from Git official website.
+
+To verify if they are installed, run the following commands in your terminal or command prompt:
+
+bash
+
+node -v
+npm -v
+git --version
+
+2. Clone the Repository:
+
+Open your terminal or command prompt and navigate to the directory where you want to clone the repository. Then, run the following command:
+
+bash
+
+git clone https://github.com/areebkanth/rick-and-morty-react-app.git
+
+3. Navigate to the Project Directory:
+
+After cloning the repository, navigate to the project folder:
+
+bash
+
+cd rick-and-morty-react-app
+
+4. Install Dependencies:
+
+The project uses npm (Node Package Manager) to manage dependencies. Run the following command to install all the necessary dependencies listed in package.json:
+
+bash
+
+npm install
+
+This command will create a node_modules folder in your project directory, containing all the dependencies.
+5. Start the Development Server:
+
+To run the React application locally, start the development server using:
+
+bash
+
+npm start
+
+This command will start the development server, and you should see output similar to this:
+
+arduino
+
+Compiled successfully!
+
+You can now view rick-and-morty-react-app in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.x.x:3000
+
+6. Open the Application in Your Browser:
+
+Once the development server is running, open your web browser and navigate to:
+
+arduino
+
+http://localhost:3000
+
+You should see your Rick and Morty React application running. You can interact with it, test its features (search, filter, sort), and browse the character list.
+7. Stop the Development Server:
+
+To stop the server, go back to your terminal or command prompt and press Ctrl + C.
+8. Building the Application for Production (Optional):
+
+If you want to build the application for production (optimized and ready to deploy), run:
+
+bash
+
+npm run build
+
+This command will create a build folder containing all the optimized files you need to deploy.
+9. Deploying to GitHub Pages (Optional):
+
+If you want to deploy your application to GitHub Pages or any other hosting platform, follow their specific instructions for deployment.
